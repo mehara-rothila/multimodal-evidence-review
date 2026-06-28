@@ -1,0 +1,20 @@
+# Secrets - never commit
+.env
+*.env
+!*.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Runtime artifacts
+code/.cache/
+.cache/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

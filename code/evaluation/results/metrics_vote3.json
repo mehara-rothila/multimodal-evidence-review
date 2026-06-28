@@ -1,0 +1,45 @@
+{
+  "tag": "vote3",
+  "model": "gemini-2.5-flash",
+  "thinking_budget": -1,
+  "usage": {
+    "calls": 40,
+    "cache_hits": 20,
+    "prompt_tokens": 137825,
+    "output_tokens": 14097,
+    "thoughts_tokens": 48706,
+    "total_tokens": 200628
+  },
+  "metrics": {
+    "n": 20,
+    "accuracy": {
+      "claim_status": 0.75,
+      "evidence_standard_met": 0.85,
+      "valid_image": 0.95,
+      "issue_type": 0.5,
+      "object_part": 0.75,
+      "severity": 0.6
+    },
+    "severity_within_1": 0.8,
+    "set_f1": {
+      "risk_flags": {
+        "precision": 0.7875,
+        "recall": 0.7875,
+        "f1": 0.7674
+      },
+      "supporting_image_ids": {
+        "precision": 0.9,
+        "recall": 0.85,
+        "f1": 0.8667
+      }
+    },
+    "claim_status_confusion": {
+      "contradicted->contradicted": 2,
+      "contradicted->not_enough_information": 1,
+      "contradicted->supported": 2,
+      "not_enough_information->not_enough_information": 1,
+      "not_enough_information->supported": 2,
+      "supported->supported": 12
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Core
+python-dotenv>=1.0.0
+
+# Vision model providers (install the one you use; all are optional/pluggable)
+google-genai>=1.0.0          # Google Gemini  (free tier)  -> EVIDENCE_PROVIDER=gemini
+anthropic>=0.40.0            # Anthropic Claude            -> EVIDENCE_PROVIDER=anthropic
+openai>=1.40.0               # OpenAI GPT-4o               -> EVIDENCE_PROVIDER=openai
+
+# Pillow is used only for cheap, local image-quality heuristics (blur/brightness)
+Pillow>=10.0.0

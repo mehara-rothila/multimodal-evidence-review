@@ -1,0 +1,44 @@
+{
+  "tag": "flash35_think",
+  "model": "gemini-3.5-flash",
+  "thinking_budget": -1,
+  "usage": {
+    "calls": 6,
+    "cache_hits": 14,
+    "prompt_tokens": 17098,
+    "output_tokens": 2412,
+    "thoughts_tokens": 9827,
+    "total_tokens": 29337
+  },
+  "metrics": {
+    "n": 20,
+    "accuracy": {
+      "claim_status": 0.5,
+      "evidence_standard_met": 0.55,
+      "valid_image": 0.9,
+      "issue_type": 0.4,
+      "object_part": 0.85,
+      "severity": 0.4
+    },
+    "severity_within_1": 0.7,
+    "set_f1": {
+      "risk_flags": {
+        "precision": 0.6225,
+        "recall": 0.6917,
+        "f1": 0.6431
+      },
+      "supporting_image_ids": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      }
+    },
+    "claim_status_confusion": {
+      "contradicted->not_enough_information": 4,
+      "contradicted->supported": 1,
+      "not_enough_information->not_enough_information": 3,
+      "supported->not_enough_information": 5,
+      "supported->supported": 7
+    }
+  }
+}
